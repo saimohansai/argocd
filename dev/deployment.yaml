@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: apache
-        image: docker.io/mpigelati/rupdate:v4
+        image: docker.io/mpigelati/rupdate:v6
         ports:
         - containerPort: 80
 ---    
