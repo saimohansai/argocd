@@ -17,3 +17,20 @@ spec:
         image: docker.io/mpigelati/rupdate:v4
         ports:
         - containerPort: 80
+---    
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: myapp
+  name: service-np
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: myapp
+  type: NodePort
+status:
+  loadBalancer: {}
