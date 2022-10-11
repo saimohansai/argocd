@@ -1,3 +1,3 @@
 kustomize:
   images:
-  - docker.io/mpigelati/rupdate:v17
+  - docker.io/mpigelati/rupdate:v18
